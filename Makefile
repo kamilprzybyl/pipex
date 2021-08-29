@@ -1,6 +1,7 @@
 FAGS = 	-Wall -Wextra -Werror
 NAME = 	pipex
-SRC = 	pipe.c \
+SRC = 	main.c \
+		pipe.c \
 		ft_split.c \
 		ft_strjoin.c \
 		ft_strlen.c \

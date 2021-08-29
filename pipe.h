@@ -9,14 +9,20 @@
 # include <stdio.h>
 # include <string.h>
 
-typedef struct 	s_data
+typedef struct s_data
 {
 	char	**envp;
 	char	**argv;
 	int		argc;
+	int		outfile;
+	int		infile;
 }				t_data;
 
-void	ft_exec(t_data *data, char **cmd_args);
+void	pipex(t_data *data);
+void	handle_child(t_data *data, int tmp_fd, int i, int *pipe_fd);
+char	**fetch_paths(t_data *data);
+void	free_arr(char **arr);
+
 char	**ft_split(char const *s, char c);
 char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlen(const char *s);
@@ -26,8 +32,6 @@ char	*ft_strdup(const char *s1);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strchr(const char *s, int c);
 void	ft_putstr_fd(char *s, int fd);
-char	**fetch_paths(t_data *data);
-void	free_arr(char **arr);
 void	ft_putendl_fd(char *s, int fd);
 
 #endif

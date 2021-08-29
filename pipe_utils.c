@@ -24,5 +24,3 @@ char	**fetch_paths(t_data *data)
 	index = ft_strchr(data->envp[i], '=');
 	return (ft_split(index + 1, ':'));
 }
-
-
