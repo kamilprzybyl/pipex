@@ -1,14 +1,10 @@
 #include "pipe.h"
 
-static void	init(t_data *data, char **argv, char **envp, int argc)
+static void	init(t_data *data, char **argv, char **envp, int argc, int infile, int outfile)
 {
 	data->argv = argv;
 	data->envp = envp;
 	data->argc = argc;
-}
-
-static void	init_2(t_data *data, int outfile, int infile)
-{
 	data->outfile = outfile;
 	data->infile = infile;
 }
@@ -34,8 +30,7 @@ int	main(int argc, char **argv, char **envp)
 		close(infile);
 		return (1);
 	}
-	init(&data, argv, envp, argc);
-	init_2(&data, outfile, infile);
+	init(&data, argv, envp, argc, outfile, infile);
 	pipex(&data);
 	close(outfile);
 	return (0);

@@ -14,12 +14,13 @@ typedef struct s_data
 	char	**envp;
 	char	**argv;
 	int		argc;
-	int		outfile;
 	int		infile;
+	int		outfile;
 }				t_data;
 
 void	pipex(t_data *data);
 void	handle_child(t_data *data, int tmp_fd, int i, int *pipe_fd);
+void	ft_exec(t_data *data, char **cmd_args);
 char	**fetch_paths(t_data *data);
 void	free_arr(char **arr);
 
