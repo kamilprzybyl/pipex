@@ -1,4 +1,4 @@
-#include "pipe.h"
+#include "../inc/pipe.h"
 
 void	free_arr(char **arr)
 {

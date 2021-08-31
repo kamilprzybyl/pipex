@@ -1,4 +1,4 @@
-#include "pipe.h"
+#include "../../inc/pipe.h"
 
 char	*ft_strdup(const char *s1)
 {

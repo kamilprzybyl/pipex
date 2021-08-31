@@ -1,4 +1,4 @@
-#include "pipe.h"
+#include "../../inc/pipe.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

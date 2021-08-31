@@ -1,4 +1,4 @@
-#include "pipe.h"
+#include "../../inc/pipe.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {

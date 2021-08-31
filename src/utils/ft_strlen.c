@@ -1,4 +1,4 @@
-#include "pipe.h"
+#include "../../inc/pipe.h"
 
 size_t	ft_strlen(const char *s)
 {

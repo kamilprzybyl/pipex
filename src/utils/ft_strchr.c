@@ -1,4 +1,4 @@
-#include "pipe.h"
+#include "../../inc/pipe.h"
 
 char	*ft_strchr(const char *s, int c)
 {

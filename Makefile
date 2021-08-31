@@ -1,18 +1,17 @@
 FAGS = 	-Wall -Wextra -Werror
 NAME = 	pipex
-SRC = 	main.c \
-		pipe.c \
-		ft_split.c \
-		ft_strjoin.c \
-		ft_strlen.c \
-		ft_substr.c \
-		ft_strdup.c \
-		ft_strlcpy.c \
-		ft_strchr.c \
-		ft_putstr_fd.c \
-		ft_strncmp.c \
-		ft_putendl_fd.c \
-		pipe_utils.c
+SRC = 	src/main.c \
+		src/pipe.c \
+		src/utils/ft_split.c \
+		src/utils/ft_strjoin.c \
+		src/utils/ft_strlen.c \
+		src/utils/ft_substr.c \
+		src/utils/ft_strdup.c \
+		src/utils/ft_strlcpy.c \
+		src/utils/ft_strchr.c \
+		src/utils/ft_putstr_fd.c \
+		src/utils/ft_strncmp.c \
+		src/utils/ft_putendl_fd.c
 OBJ = 	$(SRC:.c=.o)
 
 all: $(NAME)

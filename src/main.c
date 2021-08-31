@@ -1,4 +1,4 @@
-#include "pipe.h"
+#include "../inc/pipe.h"
 
 static void	init(t_data *data, char **argv, char **envp, int argc, int infile, int outfile)
 {
@@ -30,7 +30,7 @@ int	main(int argc, char **argv, char **envp)
 		close(infile);
 		return (1);
 	}
-	init(&data, argv, envp, argc, outfile, infile);
+	init(&data, argv, envp, argc, infile, outfile);
 	pipex(&data);
 	close(outfile);
 	return (0);

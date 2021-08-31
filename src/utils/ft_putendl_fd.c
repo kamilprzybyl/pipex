@@ -1,4 +1,4 @@
-#include "pipe.h"
+#include "../../inc/pipe.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {
